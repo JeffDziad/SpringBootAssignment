@@ -1,9 +1,15 @@
 <footer th:fragment="footer-nav">
+  <script th:inline="javascript">
+    $(document).ready(function() {
+      let id = document.title.replace(" ", "-").replace(".", "");
+      $("#" + id).addClass('current-page');
+    });
+  </script>
   <nav id="steps_nav">
     <ul>
-      <li><a th:href="@{/steps/1}">Step 1.</a></li>
-      <li><a th:href="@{/steps/2}">Step 2.</a></li>
-      <li><a th:href="@{/steps/3}">Step 3.</a></li>
+      <li><a id="Step-1" th:href="@{/steps/1}">Step 1.</a></li>
+      <li><a id="Step-2" th:href="@{/steps/2}">Step 2.</a></li>
+      <li><a id="Step-3" th:href="@{/steps/3}">Step 3.</a></li>
     </ul>
   </nav>
 </footer>
