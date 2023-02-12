@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
-<head th:replace="fragments/Metadata :: metaData(pageTitle='Step 2.')"></head>
+<head th:replace="~{fragments/Metadata :: metaData(pageTitle='Step 2.')}"></head>
 <body>
-<header th:replace="fragments/header :: header-title"></header>
+<header th:replace="~{fragments/header :: header-title}"></header>
 
 
 
-<footer th:replace="fragments/footer :: footer-nav"></footer>
+<footer th:replace="~{fragments/footer :: footer-nav}"></footer>
 </body>
 </html>
