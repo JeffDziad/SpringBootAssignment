@@ -4,7 +4,22 @@
 <body>
 <header th:replace="~{fragments/header :: header-title}"></header>
 
-
+<div class="duo-container">
+    <div class="duo-item">
+        <div>
+            <img th:src="@{../img/phone_plugged_in.png}">
+            <a class="img-source" href="https://lovepik.com/images/png-black-electrician.html">Image Source</a>
+        </div>
+    </div>
+    <div class="duo-item">
+        <h2>Step 2.</h2>
+        <hr>
+        <ol>
+            <li>Plug phone charger into a outlet.</li>
+            <li>Plug charger into the charging port typically located on the bottom of your device.</li>
+        </ol>
+    </div>
+</div>
 
 <footer th:replace="~{fragments/footer :: footer-nav}"></footer>
 </body>

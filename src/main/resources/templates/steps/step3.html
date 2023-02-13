@@ -4,7 +4,22 @@
 <body>
 <header th:replace="~{fragments/header :: header-title}"></header>
 
-
+<div class="duo-container">
+    <div class="duo-item">
+        <div>
+            <img th:src="@{../img/phone_charged.png}">
+            <a class="img-source" href='https://pngtree.com/so/illustration'>Image Source</a>
+        </div>
+    </div>
+    <div class="duo-item">
+        <h2>Step 3.</h2>
+        <hr>
+        <p>
+            Depending on how dead your device was, wait for it to be completely charged and remove the cable from the device.
+        </p>
+        <p>Congratulations, your device is fully charged! Follow these simple steps again once you've run out of charge.</p>
+    </div>
+</div>
 
 <footer th:replace="~{fragments/footer :: footer-nav}"></footer>
 </body>
