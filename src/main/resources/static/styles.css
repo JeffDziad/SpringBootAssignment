@@ -1,3 +1,7 @@
+* {
+    font-family: 'Comfortaa', cursive;
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -87,6 +91,26 @@ footer {
     width: 500px;
     height: 500px;
     margin: 10px;
-    border: black solid 5px;
-    border-radius: 25px;
+    /*border: black solid 5px;*/
+    /*border-radius: 25px;*/
+}
+
+#home-img {
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.home-item img {
+    width: 90%;
+    height: 90%;
+}
+
+#home-greeting {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }

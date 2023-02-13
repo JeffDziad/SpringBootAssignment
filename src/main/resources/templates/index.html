@@ -6,8 +6,14 @@
 <header th:replace="~{fragments/header :: header-title}"></header>
 
     <div id="home-container">
-        <div class="home-item"></div>
-        <div class="home-item"></div>
+        <div class="home-item" id="home-img">
+            <img th:src="@{img/phone_charging.jpg}">
+        </div>
+        <div class="home-item" id="home-greeting">
+            <h2>Getting Started</h2>
+            <span>Follow this simple tutorial to get your mobile device back up and running again...</span>
+            <a style="margin: 10px;" th:href="@{/steps/1}">Start Tutorial</a>
+        </div>
     </div>
 
 <footer th:replace="~{fragments/footer :: footer-nav}"></footer>
