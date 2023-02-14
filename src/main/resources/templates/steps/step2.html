@@ -5,18 +5,16 @@
 <header th:replace="~{fragments/header :: header-title}"></header>
 
 <div class="duo-container">
-    <div class="duo-item">
-        <div>
-            <img th:src="@{../img/phone_plugged_in.png}">
-            <a class="img-source" href="https://lovepik.com/images/png-black-electrician.html">Image Source</a>
-        </div>
+    <div class="duo-item duo-imgs">
+        <img th:src="@{../img/phone_plugged_in.png}">
+        <a class="img-source" href="https://lovepik.com/images/png-black-electrician.html">Image Source</a>
     </div>
-    <div class="duo-item">
-        <h2>Step 2.</h2>
-        <hr>
-        <ol>
-            <li>Plug phone charger into a outlet.</li>
-            <li>Plug charger into the charging port typically located on the bottom of your device.</li>
+    <div class="duo-item duo-text">
+        <h2>Step 2.) Plug In</h2>
+        <hr style="width: 100%; background-color: black;">
+        <ol class="formatted-list">
+            <li>Plug the charger into an outlet.</li>
+            <li>Take other end of charger coming from the wall outlet adapter and insert it into the port generally located on the bottom of your device.</li>
         </ol>
     </div>
 </div>

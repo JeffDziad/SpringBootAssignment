@@ -69,7 +69,7 @@ footer {
     text-align: center;
 }
 
-/* Home Page */
+/* Duo Flex Containers */
 
 .duo-container {
     display: flex;
@@ -92,13 +92,6 @@ footer {
 .duo-item {
     width: 500px;
     margin: 10px;
-    display: flex;
-    justify-items: center;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    /*border: black solid 5px;*/
-    /*border-radius: 25px;*/
 }
 
 @media screen and(max-width: 800px) {
@@ -111,27 +104,29 @@ footer {
     }
 }
 
-/*#home-img {*/
-/*    display: flex;*/
-/*    justify-items: center;*/
-/*    justify-content: center;*/
-/*    align-items: center;*/
-/*    align-content: center;*/
-/*    */
-/*}*/
+.duo-imgs {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
 
-.duo-item img {
+.duo-imgs img {
     width: 90%;
     height: 90%;
 }
 
-#home-greeting {
-    height: 500px;
-    padding: 10px;
+.duo-text {
     display: flex;
     flex-direction: column;
+    justify-items: center;
     justify-content: center;
+    align-items: start;
+    align-content: start;
 }
+
 
 #home-greeting h2 {
     margin: 0;
@@ -141,4 +136,8 @@ footer {
 .img-source {
     float: left;
     font-size: 10px;
+}
+
+.formatted-list li {
+    padding: 5px 0;
 }
