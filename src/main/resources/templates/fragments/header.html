@@ -5,10 +5,19 @@
             document.location.href = "/";
         }
     </script>
-    <a id="home-btn" th:href="@{/}">
-        <h1>How to... Charge your Phone!</h1>
-    </a>
-    <a onclick="resetAndRedirect()" id="reset-btn">
-        <img title="Reset Tutorial" style="cursor: pointer;" width="50" height="50" th:src="@{../img/refresh.png}">
-    </a>
+    <div style="display: flex; flex-direction: row; justify-content: center; align-content: center; justify-items: center; align-items: center;">
+
+        <a th:href="@{/}" style="display: inline;">
+            <img height="50" width="50" th:src="@{../img/tutorial.png}">
+        </a>
+
+        <a id="home-btn" th:href="@{/}" style="display: inline;">
+            <h1>How to... Charge your Phone!</h1>
+        </a>
+
+        <a onclick="resetAndRedirect()" style="display: inline;">
+            <img title="Reset Tutorial" style="cursor: pointer; filter: invert(1);" width="50" height="50" th:src="@{../img/refresh.png}">
+        </a>
+    </div>
+
 </header>

@@ -11,11 +11,18 @@ header {
     margin: 0 0 20px;
     padding: 10px;
     border-bottom: solid black 2px;
+    background-color: black;
+    color: white;
 }
 
 #home-btn {
     text-decoration: none;
     text-align: center;
+    margin: 0 10px;
+}
+
+#home-btn h1 {
+    color: white;
 }
 
 #reset-btn {
@@ -59,6 +66,11 @@ header {
 #steps_nav li a:hover {
     color: white;
     background-color: #575757;
+}
+
+.disabled-step {
+    background-color: grey;
+    color: white;
 }
 
 .current-page {
