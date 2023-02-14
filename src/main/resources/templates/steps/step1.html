@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
+<script>
+    window.onload = () => {
+        let deviceCheckbox = $('#deviceCheckbox');
+        let chargerCheckbox = $('#chargerCheckbox');
+
+        deviceCheckbox.prop('checked', getData().step1.hasDevice);
+        chargerCheckbox.prop('checked', getData().step1.hasCharger);
+
+        deviceCheckbox.click(function() {
+            let data = getData();
+            data.step1.hasDevice = this.checked;
+            setData(data);
+        });
+
+        chargerCheckbox.click(function() {
+            let data = getData();
+            data.step1.hasCharger = this.checked;
+            setData(data);
+        });
+
+    };
+</script>
 <head th:replace="~{fragments/Metadata :: metaData(pageTitle='Step 1.')}"></head>
 <body>
+
 <header th:replace="~{fragments/header :: header-title}"></header>
 
 <div class="duo-container">
@@ -14,8 +37,14 @@
         <hr style="width: 100%; background-color: black;">
         <p>The list below indicates what you will need in order to charge your phone:</p>
         <ul class="formatted-list">
-            <li>Your Phone/Mobile Device.</li>
-            <li>A Charger compatible with your device.</li>
+            <li>
+                <input type="checkbox" id="deviceCheckbox" name="deviceCheckbox" value="hasDevice">
+                <label for="deviceCheckbox">Your Phone/Mobile Device</label>
+            </li>
+            <li>
+                <input type="checkbox" id="chargerCheckbox" name="chargerCheckbox" value="hasCharger">
+                <label for="chargerCheckbox">A Charger compatible with your device</label>
+            </li>
         </ul>
     </div>
 </div>

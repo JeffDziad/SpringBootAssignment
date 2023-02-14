@@ -18,6 +18,12 @@ header {
     text-align: center;
 }
 
+#reset-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 #steps_nav {
     overflow: hidden;
     background-color: #FFF;
@@ -127,7 +133,6 @@ footer {
     align-content: start;
 }
 
-
 #home-greeting h2 {
     margin: 0;
 }
@@ -141,3 +146,8 @@ footer {
 .formatted-list li {
     padding: 5px 0;
 }
+
+.disable-anchor {
+    pointer-events: none;
+}
+

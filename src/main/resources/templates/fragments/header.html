@@ -1,5 +1,14 @@
 <header th:fragment="header-title">
+    <script>
+        function resetAndRedirect() {
+            resetData();
+            document.location.href = "/";
+        }
+    </script>
     <a id="home-btn" th:href="@{/}">
         <h1>How to... Charge your Phone!</h1>
+    </a>
+    <a onclick="resetAndRedirect()" id="reset-btn">
+        <img title="Reset Tutorial" style="cursor: pointer;" width="50" height="50" th:src="@{../img/refresh.png}">
     </a>
 </header>

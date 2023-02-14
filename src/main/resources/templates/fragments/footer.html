@@ -1,8 +1,27 @@
 <footer th:fragment="footer-nav">
   <script th:inline="javascript">
+    function getData() {
+      return JSON.parse(localStorage.getItem("PhoneChargingTutorial"));
+    }
+
     $(document).ready(function() {
       let id = document.title.replace(" ", "-").replace(".", "");
       $("#" + id).addClass('current-page');
+
+      $("#Step-2").click(function(e) {
+        let s1 = getData().step1;
+        if((!s1.hasDevice || !s1.hasCharger)) {
+          e.preventDefault();
+        }
+      });
+
+      $("#Step-3").click(function(e) {
+        let s2 = getData().step2;
+        if(!s2.chargerIsPlugged || !s2.deviceIsPlugged) {
+          e.preventDefault();
+        }
+      });
+
     });
   </script>
   <nav id="steps_nav">

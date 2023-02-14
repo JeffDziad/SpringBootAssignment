@@ -1,6 +1,28 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head th:replace="~{fragments/Metadata :: metaData(pageTitle='Step 2.')}"></head>
+<script>
+    window.onload = () => {
+        let chargerPlugged = $('#chargerPlugged');
+        let devicePlugged = $('#devicePlugged');
+
+        chargerPlugged.prop('checked', getData().step2.chargerIsPlugged);
+        devicePlugged.prop('checked', getData().step2.deviceIsPlugged);
+
+        chargerPlugged.click(function() {
+            let data = getData();
+            data.step2.chargerIsPlugged = this.checked;
+            setData(data);
+        });
+
+        devicePlugged.click(function() {
+            let data = getData();
+            data.step2.deviceIsPlugged = this.checked;
+            setData(data);
+        });
+
+    };
+</script>
 <body>
 <header th:replace="~{fragments/header :: header-title}"></header>
 
@@ -13,8 +35,14 @@
         <h2>Step 2.) Plug In</h2>
         <hr style="width: 100%; background-color: black;">
         <ol class="formatted-list">
-            <li>Plug the charger into an outlet.</li>
-            <li>Take other end of charger coming from the wall outlet adapter and insert it into the port generally located on the bottom of your device.</li>
+            <li>
+                <input type="checkbox" id="chargerPlugged" name="chargerPlugged" value="chargerIsPlugged">
+                <label for="chargerPlugged">Plug the charger into an outlet.</label>
+            </li>
+            <li>
+                <input type="checkbox" id="devicePlugged" name="devicePlugged" value="deviceIsPlugged">
+                <label for="devicePlugged">Take other end of charger coming from the wall outlet adapter and insert it into the port generally located on the bottom of your device.</label>
+            </li>
         </ol>
     </div>
 </div>

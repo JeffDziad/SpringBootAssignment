@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="en" xmlns:th="http://thymeleaf.org">
 <head th:replace="~{fragments/Metadata :: metaData(pageTitle='Step 3.')}"></head>
+<script>
+    window.onload = () => {
+        let data = getData();
+        data.step3.visited = true;
+        setData(data);
+    };
+</script>
 <body>
 <header th:replace="~{fragments/header :: header-title}"></header>
 
@@ -13,7 +20,10 @@
         <h2>Step 3.) Wait</h2>
         <hr style="width: 100%; background-color: black;">
         <p>
-            Congratulations, your device is now charging! Check in periodically to see if its finished. Most phones can be fully charged within two hours.
+            Congratulations, your device is now charging! Check in periodically to see if it's finished.
+        </p>
+        <p>
+            Tip: Most phones can be fully charged within two hours.
         </p>
     </div>
 </div>
