@@ -24,9 +24,5 @@ function resetData() {
 }
 
 if(!getData()) {
-   resetData();
+    resetData();
 }
-
-
-
-console.log(getData());

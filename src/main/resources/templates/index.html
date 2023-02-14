@@ -5,18 +5,18 @@
 
 <header th:replace="~{fragments/header :: header-title}"></header>
 
-    <div class="duo-container">
-        <div class="duo-item duo-imgs">
-            <img th:src="@{img/phone_charging.jpg}">
-        </div>
-        <div class="duo-item duo-text">
-            <h2>Getting Started</h2>
-            <hr style="width: 100%; background-color: black;">
-            <span>Follow this simple tutorial to get your mobile device back up and running again...</span>
-            <p>To start, click the link below or use the lower navigation bar to select 'Step 1.'.</p>
-            <a style="margin: 10px;" th:href="@{/steps/1}">Start Tutorial</a>
-        </div>
+<div class="duo-container">
+    <div class="duo-item duo-imgs">
+        <img th:src="@{img/phone_charging.jpg}">
     </div>
+    <div class="duo-item duo-text">
+        <h2>Getting Started</h2>
+        <hr style="width: 100%; background-color: black;">
+        <span>Follow this simple tutorial to get your mobile device back up and running again...</span>
+        <p>To start, click the link below or use the lower navigation bar to select 'Step 1.'.</p>
+        <a style="margin: 10px;" th:href="@{/steps/1}">Start Tutorial</a>
+    </div>
+</div>
 
 <footer th:replace="~{fragments/footer :: footer-nav}"></footer>
 

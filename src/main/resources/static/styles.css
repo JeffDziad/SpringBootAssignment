@@ -87,8 +87,6 @@ footer {
     text-align: center;
 }
 
-/* Duo Flex Containers */
-
 .duo-container {
     display: flex;
     flex-direction: row;
@@ -149,7 +147,6 @@ footer {
     margin: 0;
 }
 
-/* Image Source Anchors */
 .img-source {
     float: left;
     font-size: 10px;
