@@ -48,7 +48,7 @@ header {
     float: left;
     display: inline-block;
     flex: 1;
-    border: black 2px solid;
+    border-top: black 2px solid;
 }
 
 #steps_nav li a {
