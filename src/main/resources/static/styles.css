@@ -81,7 +81,7 @@ header {
 footer {
     width: 100vw;
     position: fixed;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     color: white;
     text-align: center;
